@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "New Integration",
+        "data": {
+          "title": "Configuration name",
+          "url": "ntfy.sh URL (default or self-hosted)",
+          "token": "Authorization token",
+          "subscribe": "Comma-separated list of topics to subscribe to"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Invalid ntfy.sh URL"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "description": "Configure Integration",
+        "data": {
+          "url": "ntfy.sh URL (default or self-hosted)",
+          "token": "Authorization token",
+          "subscribe": "Comma-separated list of topics to subscribe to"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Invalid ntfy.sh URL"
+    }
+  }
+}

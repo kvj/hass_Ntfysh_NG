@@ -1,0 +1,122 @@
+notify:
+  name: Send message to the ntfy.sh server
+  target:
+    device:
+      integration: ntfysh_ng
+  fields:
+    topic:
+      name: Message topic
+      required: true
+      example: "disk-alerts"
+      selector:
+        text:
+    title:
+      name: Message title
+      required: false
+      example: "Message title"
+      selector:
+        text:
+    message:
+      name: Main body of the message as shown in the notification
+      required: false
+      example: "Message content"
+      selector:
+        text:
+    priority:
+      name: Message priority
+      required: false
+      example: 3
+      selector:
+        number:
+          min: 1
+          max: 5
+          mode: slider
+    tags:
+      name: Tags and emojis (comma-separated)
+      required: false
+      example: "warning,daily-backup"
+      selector:
+        text:
+    delay:
+      name: Timestamp or duration for delayed delivery
+      required: false
+      example: "tomorrow, 10am"
+      selector:
+        text:
+    actions:
+      name: User actions in short format
+      required: false
+      example: "view, Open portal, https://home.nest.com/, clear=true"
+      selector:
+        text:
+    click:
+      name: URL to open when notification is clicked
+      required: false
+      example: "https://www.reddit.com/message/messages"
+      selector:
+        text:
+          type: url
+    icon:
+      name: URL to use as notification icon
+      required: false
+      example: "https://styles.redditmedia.com/t5_32uhe/styles/communityIcon_xnt6chtnr2j21.png"
+      selector:
+        text:
+          type: url
+    attach:
+      name: URL to send as an attachment
+      required: false
+      example: "https://f-droid.org/F-Droid.apk"
+      selector:
+        text:
+          type: url
+    attach-local:
+      name: Path to local file to send as an attachment
+      required: false
+      example: "/tmp/screenshot.png"
+      selector:
+        text:
+    filename:
+      name: Attachment filename, as it appears in the client
+      required: false
+      example: "flower.jpg"
+      selector:
+        text:
+    email:
+      name: E-mail address for e-mail notifications
+      required: false
+      example: "my@email.com"
+      selector:
+        text:
+          type: email
+    call:
+      name: Phone number for phone calls
+      required: false
+      example: "+12223334444"
+      selector:
+        text:
+          type: tel
+    markdown:
+      name: Enable Markdown formatting in the notification body
+      required: false
+      example: "true"
+      selector:
+        boolean:
+    cache:
+      name: Allows disabling message caching
+      required: false
+      example: "true"
+      selector:
+        boolean:
+    firebase:
+      name: Allows disabling sending to Firebase
+      required: false
+      example: "true"
+      selector:
+        boolean:
+    content-type:
+      name: Override body content type
+      required: false
+      example: "text/markdown"
+      selector:
+        text:

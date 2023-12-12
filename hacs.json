@@ -1,0 +1,5 @@
+{
+    "name": "ntfy.sh client Home Assistant",
+    "domains": ["event"],
+    "render_readme": true
+}

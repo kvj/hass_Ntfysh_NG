@@ -1,0 +1,12 @@
+{
+  "domain": "ntfysh_ng",
+  "name": "ntfy.sh client",
+  "documentation": "https://github.com/kvj/hass_Ntfysh_NG",
+  "issue_tracker": "https://github.com/kvj/hass_Ntfysh_NG/issues",
+  "dependencies": [],
+  "codeowners": ["@kvj"],
+  "requirements": ["aiohttp-sse-client == 0.2.1"],
+  "iot_class": "local_polling",
+  "config_flow": true,
+  "version": "0.1.0"
+}
